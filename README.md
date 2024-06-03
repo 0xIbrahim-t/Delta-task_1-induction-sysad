@@ -1,7 +1,7 @@
 # Delta-task_1-induction-sysad
 Gemini Club Inductions Server
 
-#Normal Mode:
+# Normal Mode:
 (alias - userGen) Create an account for the Core (Club Admin) with their own Home directory. Create respective folders for mentors and mentees under the Core's home directory. Create accounts and home directories for the respective mentees under the mentees directory. Create three folders Webdev, Appdev, and Sysad under the mentors folder and create accounts and home directories for the respective mentors under their respective domains.
 
 All the mentees should have a domain_pref.txt, task_completed.txt file and a task_submitted.txt files in their home directory
@@ -22,7 +22,7 @@ Note: Used menteeDetails.txt, mentorDetails.txt and mentees_domain.txt
 (alias - displayStatus) When the core runs this alias, it will print out the total percentage of people who submitted each task so far along with the list of mentees who submitted the task since the last time the core used this alias. You should also be able to filter by domain using command-line arguments.
 
 
-#SuperUser Mode:
+# SuperUser Mode:
 (alias - deRegister) Whenever a mentee wants to deregister out of the induction process, They can use this alias to do it. When deregistering, it should remove the domain dir from their home and remove it from their domain_pref.txt
 
 
