@@ -99,6 +99,5 @@ done
 echo "Mentor allocation for mentees is done"
 export EDITOR=vim
 export VISUAL=vim
-echo "00 00 * * * displayStatus" | crontab -u Core -
-echo "10 10 * * 0,3,6 /script/check_deregistered.sh" | crontab -u Core -
+echo "10 10 * * * /scripts/cronjob.sh" | crontab -u Core -
 echo "Cronjobs for displayStatus every day at 00:00 and for checking deregistered mentees at 10:10 on sunday, wednesday and saturday every week."
