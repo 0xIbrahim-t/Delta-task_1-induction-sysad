@@ -26,8 +26,8 @@ if [ -d ~/submittedTasks ]; then
 						echo "${qn}" >> $(eval echo ~$allocated_mentee)/questions.txt
 					done
 					echo "We have set some question as a part of the induction process, please answer those questions by running the command answerQuiz" > $(eval echo ~$allocated_mentee)/notification.txt
-					echo "/script/notification.sh" >> $(eval echo ~$allocated_mentee)/.bashrc
-					echo "/script/delete_noti.sh" >> $(eval echo ~$allocated_mentee)/.bashrc
+					echo "/scripts/notification.sh" >> $(eval echo ~$allocated_mentee)/.bashrc
+					echo "/scripts/delete_noti.sh" >> $(eval echo ~$allocated_mentee)/.bashrc
 					echo "The quiz has been successfully set for this $allocated_mentee and the notification has been sent."
 				done
 				question_number=$(($question_number + 1))
