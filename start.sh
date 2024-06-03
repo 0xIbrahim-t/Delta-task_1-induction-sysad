@@ -3,7 +3,7 @@
 
 
 mkdir /scripts
-script_files=(check_deregistered.sh deRegister.sh delete_noti.sh displayStatus.sh domainPref.sh mentorAllocation.sh notification.sh setQuiz.sh submitTask.sh userGen.sh answerQuiz.sh)
+script_files=(check_deregistered.sh cronjob.sh deRegister.sh delete_noti.sh displayStatus.sh domainPref.sh mentorAllocation.sh notification.sh setQuiz.sh submitTask.sh userGen.sh answerQuiz.sh)
 for script_file in ${script_files[@]}; do
 	mv $script_file /scripts
 	chmod -R 711 /scripts/$sccript_file
