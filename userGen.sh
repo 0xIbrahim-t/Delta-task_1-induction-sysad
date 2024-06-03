@@ -64,6 +64,8 @@ while read line; do
 	chown $mentee:${mentee}_group ~Core/mentees/$mentee/task_completed.txt
 	chown $mentee:${mentee}_group ~Core/mentees/$mentee/rollnumber.txt
 	chown $mentee:${mentee}_group $(eval echo ~$mentee)
+	chown $mentee:${mentee}_group $(eval echo ~$mentee)/.bashrc
+	chmod -R 770 $(eval echo ~$mentee)/.bashrc
 	chmod -R 770 ~Core/mentees/$mentee/domain_pref.txt
 	chmod -R 770 ~Core/mentees/$mentee/task_completed.txt
 	chmod -R 770 ~Core/mentees/$mentee/task_submitted.txt
@@ -101,6 +103,8 @@ while read line; do
 	chown $mentor:${mentor}_group ~Core/mentors/$domain/$mentor/submittedTasks/task1
 	chown $mentor:${mentor}_group ~Core/mentors/$domain/$mentor/submittedTasks/task2
 	chown $mentor:${mentor}_group ~Core/mentors/$domain/$mentor/submittedTasks/task3
+	chown $mentor:${mentor}_group $(eval echo ~$mentor)/.bashrc
+	chmod -R 770 $(eval echo ~$mentor)/.bashrc
 	chmod -R 770 ~Core/mentors/$domain/$mentor
 	chmod -R 770 ~Core/mentors/$domain/$mentor/allocatedMentees.txt
 	chmod -R 770 ~Core/mentors/$domain/$mentor/submittedTasks/task1
