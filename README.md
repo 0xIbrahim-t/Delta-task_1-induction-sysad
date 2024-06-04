@@ -32,7 +32,7 @@ Note: Used menteeDetails.txt, mentorDetails.txt and mentees_domain.txt
 
 #### (Cronjob) Is activated once the core runs the mentorAllocation command
 Run displayStatus every once a day
-Check every mentee to see if they have deregistered, and if so remove all traces of that mentee only if they deregistered from all domains. if not remove all traces from their respective mentor's files. Please consult your mentor about your method, before proceeding. This should occur at 10:10 every three days of the week and on Sundays for May, June, and July. Do not set up multiple cronjobs.
+Check every mentee to see if they have deregistered, and if so remove all traces of that mentee only if they deregistered from all domains. if not remove all traces from their respective mentor's files. Please consult your mentor about your method, before proceeding. this runs at 10:10 on sunday, Wednesday and Saturday
 
 
 #### (alias - setQuiz) Mentors should be able to make a set of questions (how many ever they want to), and the mentees should be able to view them as a notification at their next login, answer these questions, and save them in quiz_answers in their home directory.
