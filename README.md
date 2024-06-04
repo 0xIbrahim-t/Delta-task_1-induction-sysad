@@ -23,11 +23,14 @@ Note: Used menteeDetails.txt, mentorDetails.txt and mentees_domain.txt
 
 #### (alias - submitTask) When a mentee executes this alias, it will populate the details of the submitted tasks in the task_submitted.txt file and generate the corresponding task folders under the directory of the domain to which that particular task belongs. (Note: This should be a command-line tool). If a mentor runs it, Check for all the task directories of their respective mentees and create a symlink from the mentor's task directory to the mentees' respective task directories. Check if the tasks are completed (If the task folder is not empty, then assume that the task is completed) and modify the task_completed.txt file accordingly.
 
-#### (alias - displayStatus) When the core runs this alias, it will print out the total percentage of people who submitted each task so far along with the list of mentees who submitted the task since the last time the core used this alias. You should also be able to filter by domain using command-line arguments.
+#### (alias - displayStatus) When the core runs this alias, it will print out the total percentage of people who submitted each task so far along with the list of mentees who submitted the task since the last time the core used this alias. You should also be able to filter by domain using command-line arguments, the command line arguments should be either sysad or app or web or any two or all three.
+### example:
+>> displayStatus sysad web
+the above command gives info about sysad and web domain.
 
 
 ## SuperUser Mode:
-(alias - deRegister) Whenever a mentee wants to deregister out of the induction process, They can use this alias to do it. When deregistering, it should remove the domain dir from their home and remove it from their domain_pref.txt
+#### (alias - deRegister) Whenever a mentee wants to deregister out of the induction process, They can use this alias to do it. When deregistering, it should remove the domain dir from their home and remove it from their domain_pref.txt
 
 
 #### (Cronjob) Is activated once the core runs the mentorAllocation command
@@ -36,5 +39,3 @@ Check every mentee to see if they have deregistered, and if so remove all traces
 
 
 #### (alias - setQuiz) Mentors should be able to make a set of questions (how many ever they want to), and the mentees should be able to view them as a notification at their next login, answer these questions, and save them in quiz_answers in their home directory.
-
-
