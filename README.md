@@ -25,7 +25,7 @@ Note: Used menteeDetails.txt, mentorDetails.txt and mentees_domain.txt
 
 #### (alias - displayStatus) When the core runs this alias, it will print out the total percentage of people who submitted each task so far along with the list of mentees who submitted the task since the last time the core used this alias. You should also be able to filter by domain using command-line arguments, the command line arguments should be either sysad or app or web or any two or all three.
 ### example:
->> displayStatus sysad web
+> displayStatus sysad web
 
 ##### the above command gives info about sysad and web domain.
 
