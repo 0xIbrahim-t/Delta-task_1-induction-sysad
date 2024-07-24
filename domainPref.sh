@@ -19,7 +19,6 @@ select domain in sysad web app "exit"; do
 		pref1="$domain"
 		pref="second"
 		x=1
-		PS3="what is $pref preference"
 		select domain in sysad web app "exit"; do
 			if [[ $domain == "exit" ]]; then
 				break
@@ -27,7 +26,6 @@ select domain in sysad web app "exit"; do
 				pref2="$domain"
 				pref="third"
 				x=2
-				PS3="what is $pref preference"
 				select domain in sysad web app "exit"; do
 					if [[ $domain == "exit" ]]; then
 						break
