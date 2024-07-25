@@ -31,7 +31,6 @@ if [ -f ~/domain_pref.txt ]; then
 					fi
 				fi
 				v=$(($v+1))
-				echo $task_completed
 				break
 			done
 
