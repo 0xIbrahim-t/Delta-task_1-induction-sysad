@@ -52,12 +52,7 @@ elif [ -f ~/allocatedMentees.txt ]; then
 
 	readarray -t allocated_mentees < <(awk '{print $2}' ~/allocatedMentees.txt)
 	readarray -t domain_allocated_mentees < <(awk '{print $3}' ~/allocatedMentees.txt)
-	if [ -s $(awk "NR==2 {print \$3}" ~/allocatedMentees.txt) ]; then
-		line=2
-	else
-		line=1
-	fi
-	domain=$(awk "NR==$line {print \$3}" ~/allocatedMentees.txt)
+	domain=$(awk "NR==1 {print \$3}" ~/allocatedMentees.txt)
 	echo $domain
 	for allocated_mentee in ${allocated_mentees[@]}; do
 		echo $allocated_mentee
